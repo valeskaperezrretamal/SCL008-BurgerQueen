@@ -1,11 +1,15 @@
-import React from 'react';
+import React from 'react'; 
 import logo from './logo.svg';
 import './App.css';
+import Title from './Title.js';
+import SubTitle from './SubTitle.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+         <Title name= "laboratoria"></Title>
+         <SubTitle name="proyecto"></SubTitle>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -22,5 +26,9 @@ function App() {
     </div>
   );
 }
+
+
+
+
 
 export default App;
