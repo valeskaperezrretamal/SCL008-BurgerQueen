@@ -1,0 +1,71 @@
+{
+    "desayuno": [{
+        "id": 1,
+        "option":"café americano",
+        "precio":500
+    },{
+        "id": 2,
+        "option":"café con leche",
+        "precio":700
+    }, {
+        "id": 3,
+        "option": "sanwdich de jamón y queso",
+        "precio": 1000
+    }, {
+        "id": 4,
+        "option": "Jugo natural"
+    }],
+    "restodeldia":[{
+        "id":1,
+        "option":"hambuerguesa simple",
+        "precio":1500
+        },{
+            "id":2,
+            "option":"hambuerguesa doble",
+            "precio":2500
+        },{
+            "id":3,
+            "option":"papas fritas",
+            "precio":500
+        }, {
+            "id":4,
+            "option":"agua 500ml",
+            "precio":500
+        }, {
+            "id":5,
+            "option":"agua 750",
+            "precio":800
+        },{
+            "id":6,
+            "option":"gaseosa 500ml",
+            "precio":700
+        },{
+            "id":7,
+            "option":"gaseosa 750",
+            "precio":1000
+        }],
+        
+        "extra":[{
+            "id":1,
+            "option":"queso",
+            "precio":500
+        },{
+            "id":2,
+            "option":"huevo",
+            "precio":500
+        }],
+        "tiposdecarne":[{
+            "id":1,
+            "option":"res"
+        },{
+            "id":2,
+            "option":"pollo"
+        },{
+            "id":3,
+            "option":"vegetariana"
+        }]
+    
+
+    
+}
+
