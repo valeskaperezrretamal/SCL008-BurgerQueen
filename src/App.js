@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React, { useState } from 'react'; 
 import './App.css';
 //import MenuButton from './MenuButton.js';
 import NavigationMenu from './supercomponent/NavigationMenu';
@@ -10,15 +10,19 @@ import FrameMenu from './supercomponent/FrameMenu';
 
 //import OptionMenu from './OptionMenu.js';
 
-//condiciones iniciales
-//variable y función van a determinar la pantalla acutal de la aplicación (opción menú/mesero,pedidos/cocina,historial)
-let mode ="";
-const changeMode = (view)=>{
-  mode = view;
-}
-
-function App() {
+function App(){
   
+  const [mode, changeMode] = useState('');
+     
+  
+  let pantalla;
+  if (mode==="mesero"){
+    pantalla=<div><ClientName/>
+                <OptionMenuWaiter/>;
+              <FrameMenu></FrameMenu></div>
+  }
+
+
   return (
 
 
@@ -26,18 +30,9 @@ function App() {
     <div className="App">
       <header className="App-header">
        
-      <h1 className="titulo">{"Burger Queen" + mode} </h1>
-      <NavigationMenu action = {changeMode}/>
-      
-      {/* <ClientName/>
-      <OptionMenuWaiter/>
-      <FrameMenu></FrameMenu> */}
-      
-        
-        
-         
-        
-         
+      <h1 className="titulo">{"Burger Queen"} </h1>
+      <NavigationMenu act={changeMode}/>
+      {pantalla}         
        
     </header>
       
