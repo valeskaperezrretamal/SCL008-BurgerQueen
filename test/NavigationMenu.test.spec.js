@@ -1,11 +1,20 @@
 import React from 'react';
+import NavigationMenu from './App.test.spec';
+import {shallow} from 'enzyme';
 import App from '../src/App';
-//import {shallow} from 'enzyme';
+
+//it("renders task list" () => {
+  //const wrapper = shallow(<App />);
+    //expect(wrapper.find('TaskList').length).toBe(1);
+  //});
 
 
-//it('renders without crashing', () => {
-  //  const div = document.createElement('div');
-    //shallow(),
+  describe(' Componente NavigationMenu ', () => {
+ 
+    it('tiene una etiqueta botton', () => {
+    });
+   
+    it('esta envuelto dentro de una clase NavigationMenu', () => {
+    })
+  })
   
-    
-    //});

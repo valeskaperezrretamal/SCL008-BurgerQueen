@@ -6,10 +6,10 @@ class Order extends Component{
         super(props);
 //esto es una prueba, se va a implementar lectura desde redux
         this.state={clientName: "vale", order:
-    [{productName: "arroz",
+    [{productName: "Café",
     qty: 3,
     subtotal: 3000},{
-        productName: "lentejas",
+        productName: "sandwich de jamón y queso",
         qty: 2,
         subtotal: 2000   
     }]};

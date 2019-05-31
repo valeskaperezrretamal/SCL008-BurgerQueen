@@ -1,6 +1,7 @@
 import React,{Component} from'react';
 import data from '../OptionMenu.json';
 import ElementMenu from './ElementMenu.js';
+import './style/StyleOptionMenuWaiter.css'
 
 class OptionMenuWaiter extends Component {
   constructor(props){
@@ -12,7 +13,7 @@ class OptionMenuWaiter extends Component {
  
   render(){
     return(
-      <div>
+      <div className="optionmenuwaiter">
         <button onClick={()=>{this.setState({category: "desayuno"})}}> Desayuno</button>
         <button onClick={()=>{this.setState({category: "restodeldia"})}}> Resto del día</button>
         <button onClick={()=>{this.setState({category: "tiposdecarne"})}}> Tipos de carne</button>
