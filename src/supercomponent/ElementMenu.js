@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './style/StyleElementMenu.css';
 class ElementMenu extends Component{
     constructor(props){
         super(props);
@@ -6,7 +7,7 @@ class ElementMenu extends Component{
     }
     render(){
         return(
-            <div>
+            <div className="elementmenu">
                 <ul>
                     <li>{this.props.name}</li>
                     <li>{this.props.price}</li>
