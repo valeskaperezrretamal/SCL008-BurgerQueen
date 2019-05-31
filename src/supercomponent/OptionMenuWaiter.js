@@ -1,11 +1,12 @@
 import React,{Component} from'react';
 import data from '../OptionMenu.json';
+import ElementMenu from './ElementMenu.js';
 
 class OptionMenuWaiter extends Component {
   constructor(props){
     super(props);
     
-    this.state={category: "extra"};
+    this.state={category: ""};
    
   }
  
@@ -18,10 +19,10 @@ class OptionMenuWaiter extends Component {
         <button onClick={()=>{this.setState({category: "extra"})}}> extras</button>
 
      
-    {this.state.category==="desayuno" ? data.desayuno.map(optmenu=>{return <p>{optmenu.option}</p>}):""}
-    {this.state.category==="restodeldia" ? data.restodeldia.map(optmenu=>{return <p>{optmenu.option}</p>}):""}
-    {this.state.category==="tiposdecarne" ? data.tiposdecarne.map(optmenu=>{return <p>{optmenu.option}</p>}):""}
-    {this.state.category==="extra" ? data.extra.map(optmenu=>{return <p>{optmenu.option}</p>}):""}
+    {this.state.category==="desayuno" ? data.desayuno.map(optmenu=>{return <ElementMenu name={optmenu.option} price={optmenu.precio}/>}):""}
+    {this.state.category==="restodeldia" ? data.restodeldia.map(optmenu=>{return <ElementMenu name={optmenu.option}price={optmenu.precio}/>}):""}
+    {this.state.category==="tiposdecarne" ? data.tiposdecarne.map(optmenu=>{return <ElementMenu name={optmenu.option} price={optmenu.precio}/>}):""}
+    {this.state.category==="extra" ? data.extra.map(optmenu=>{return <ElementMenu name={optmenu.option} price={optmenu.precio}/>}):""}
     
     
 

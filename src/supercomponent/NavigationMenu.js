@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
+import './style/StyleNavigationMenu.css';
+
 
 
 class NavigationMenu extends Component {
    
     render(){
         return(
-            <div>
-                <nav>
-                    <li><a href="" >Opción Menu/cocina</a></li>
-                    <li><a href="">Pedidos/cocina</a></li>
-                    <li><a href="">Historial</a></li>
-                </nav>
+            <div className="navigationMenu">
+              <button type="button" className="btnOption">Opción Menú/Mesero</button>
+              <button type="button" className="btnKitchen">Pedido/Cocina</button>
+              <button type="button" className="btnRecord">Historial</button>
             </div>
         )
     }

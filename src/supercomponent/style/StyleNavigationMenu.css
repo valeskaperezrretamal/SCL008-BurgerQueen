@@ -1,0 +1,77 @@
+.titulo{
+text-align: center;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 42px;
+color: #F7F168;
+
+}
+.navigationMenu{
+    position: absolute;
+    width: 768px;
+    height: 93px;
+    
+    background: #F6F168;
+
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+color: #000000;
+
+}
+.letrasnavigationMenu {
+    position: relative;
+    clear: both;
+    height: 50px;
+    padding: 2px 0 4px;
+    min-height: 26px;
+    text-align: center;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 47px;
+    overflow: hidden;
+}
+
+
+
+.btnOption{
+margin:3%;
+top:463px;
+left:-339px;
+width: 150px;
+height: 59px;
+background: #F6F168;
+
+}
+.btnKitchen{
+margin:3%;
+top:725px;
+left:-339px;
+width: 150px;
+height: 59px;
+background: #F6F168;
+
+}
+.btnRecord{
+margin:3%;
+top:986px;
+left:-339px;
+width: 150px;
+height: 59px;
+background: #F6F168;
+
+} 
+.clientName{
+margin: 20%;
+
+
+}

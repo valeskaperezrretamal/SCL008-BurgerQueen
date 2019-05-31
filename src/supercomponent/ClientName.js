@@ -13,12 +13,13 @@ class ClientName extends Component {
     }
   
     handleSubmit(event) {
-      document.write('Pedido de: ' + this.state.value);
+      alert('Pedido de: ' + this.state.value);
       event.preventDefault();
     }
   
     render() {
       return (
+        <div className="clientName">
         <form onSubmit={this.handleSubmit}>
           <label>
             Nombre Cliente:
@@ -26,6 +27,7 @@ class ClientName extends Component {
           </label>
           <input type="submit" value="ingresar" />
         </form>
+        </div>
       );
     }
   }

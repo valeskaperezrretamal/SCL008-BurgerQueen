@@ -1,9 +1,13 @@
 import React from 'react'; 
 import './App.css';
 //import MenuButton from './MenuButton.js';
-import NavigationMenu from './supercomponent/NavigationMenu.js';
-import SuperButton from './supercomponent/SuperButton.js';
+import NavigationMenu from './supercomponent/NavigationMenu';
 import ClientName from './supercomponent/ClientName';
+import OptionMenuWaiter from './supercomponent/OptionMenuWaiter';
+import FrameMenu from './supercomponent/FrameMenu';
+
+
+
 //import OptionMenu from './OptionMenu.js';
 
 
@@ -14,18 +18,21 @@ function App() {
 
     <div className="App">
       <header className="App-header">
-      <h1>Burger Queen</h1>
-      <NavigationMenu></NavigationMenu>
-      <SuperButton btn="mesero"/>
-      <SuperButton btn="pedido/cocina"/>
-      <ClientName></ClientName>
+       
+      <h1 className="titulo">Burger Queen</h1>
+      <NavigationMenu/>
+      <ClientName/>
+      <OptionMenuWaiter/>
+      <FrameMenu></FrameMenu>
+      
         
         
          
         
          
        
-      </header>
+    </header>
+      
     </div>
   );
 }
