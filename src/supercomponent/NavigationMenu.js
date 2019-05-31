@@ -4,11 +4,14 @@ import './style/StyleNavigationMenu.css';
 
 
 class NavigationMenu extends Component {
+  constructor(props){
+    super(props);
+  }
    
     render(){
         return(
             <div className="navigationMenu">
-              <button type="button" className="btnOption">Opción Menú/Mesero</button>
+              <button onClick ={()=>{return this.props.action("mesero")}} type="button" className="btnOption">Opción Menú/Mesero</button>
               <button type="button" className="btnKitchen">Pedido/Cocina</button>
               <button type="button" className="btnRecord">Historial</button>
             </div>
