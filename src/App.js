@@ -11,7 +11,7 @@ import FrameMenu from './supercomponent/FrameMenu';
 //import OptionMenu from './OptionMenu.js';
 
 function App(){
-  
+  //mode: estado, changeMode:metodo para cambiar estado
   const [mode, changeMode] = useState('');
      
   
