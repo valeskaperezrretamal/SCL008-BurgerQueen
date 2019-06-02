@@ -1,3 +1,4 @@
+//libreria para usar estado sin escribir clase
 import React, { useState } from 'react'; 
 import './App.css';
 //import MenuButton from './MenuButton.js';
