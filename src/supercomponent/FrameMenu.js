@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
+
+
 import './style/StyleOrder.css';
+//import {lo que use de boostrap} from 'react-bootstrap';
 
 class Order extends Component{
     constructor(props){
