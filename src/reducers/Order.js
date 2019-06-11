@@ -1,13 +1,19 @@
+import { ADD_ORDER } from "../actions/actionTypes";
 
 export default (
-state={
+state={  //pasado
     name: "",
     items: []
 },
-action
+action //presente
 ) => {
     switch(action.type){
-        case 
+        case ADD_ORDER:
+            return{ //futuro
+                ...state,
+                items: state.items.concat([action.payload])
+
+            }
 
 
     }
