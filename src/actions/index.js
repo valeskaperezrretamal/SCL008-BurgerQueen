@@ -1,4 +1,8 @@
+import saveName from './Name';
 
+export default{
+    saveName
+};
 //función pura, solo dependerán de dispatch.
 //clausura: me permite encerraren el ambiente una variable
 //dispatch: es una función que dice que terminamos una acción determinada
