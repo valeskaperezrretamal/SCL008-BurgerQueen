@@ -2,5 +2,5 @@
 //las acciones que llaman estados, con mobre super claro, de la accioon que va a pasar
 //poner nombre en acciones
 export const ADD_NAME="ADD_NAME";
-export const ADD_ORDER="ADD_ORDER";
-export const REMOVER_ORDER="REMOVER_ORDER";
+export const ADD_TO_ORDER="ADD_TO_ORDER";
+export const REMOVE_OF_ORDER="REMOVE_OF_ORDER";
