@@ -1,30 +1,20 @@
 import React,{Component} from 'react';
+import {connect}from 'react-redux';
+import {addName} from '../actions/Order';
+
 
 class ClientName extends Component {
     constructor(props) {
-      super(props);
-      this.state = {value: ''};
-  
-      this.handleChange = this.handleChange.bind(this);
-      this.handleSubmit = this.handleSubmit.bind(this);
-    }
-  
-    handleChange(event) {
-      this.setState({value: event.target.value});
-    }
-  
-    handleSubmit(event) {
-      alert('Pedido de: ' + this.state.value);
-      event.preventDefault();
+      super(props);     
     }
   
     render() {
       return (
         <div className="clientName">
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.props.addName}>
           <label>
             Nombre Cliente:
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
+            <input type="text"  />
           </label>
           <input type="submit" value="ingresar" />
         </form>
@@ -33,4 +23,23 @@ class ClientName extends Component {
     }
   }
 
-  export default ClientName;
+  
+  
+
+  const mapStateToProps = (state)=>{
+    return {
+      ...state
+    };
+  };
+
+  const mapDispatchToProps = (dispatch) => {
+    return {
+      //turnToName: turnName(dispatch),
+      ADD_NAME: addName(dispatch)
+     
+    }
+  }
+  export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(ClientName);
