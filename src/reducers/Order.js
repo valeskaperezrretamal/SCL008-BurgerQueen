@@ -21,13 +21,18 @@ action //presente
             case REMOVE_OF_ORDER:
                 return{
                     ...state,
-                    actualOrder: state.actualOrder.listOrder.filter((e)=>{return([action.payload]!==e)})
+                    listOrder: state.actualOrder.listOrder.filter((e)=>{return([action.payload]!==e)})
             }
             case ADD_NAME:
-                const copy=Object.assign({},state)
-                copy.actualOrder.clientName=[action.payload]
-            return copy;
-                
+            return{
+            ...state,
+            actualOrder:{
+                clientName: action.payload
+                //const copy=Object.assign({},state)
+                //copy.actualOrder.clientName=[action.payload]
+            //return copy;
+        }
+        }
             default: return state;
 
 
