@@ -1,7 +1,7 @@
-import saveName from './Name';
+import Order from './Order';
 
 export default{
-    saveName
+    Order
 };
 //función pura, solo dependerán de dispatch.
 //clausura: me permite encerraren el ambiente una variable
