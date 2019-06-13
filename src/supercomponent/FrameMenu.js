@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
 
-
-import './style/StyleOrder.css';
+//import './style/StyleOrder.css';
 //import {lo que use de boostrap} from 'react-bootstrap';
 
-class Order extends Component{
+class FrameMenu extends Component{
     constructor(props){
         super(props);
 //esto es una prueba, se va a implementar lectura desde redux
-        this.state={clientName: "vale", order:
+/*         this.state={clientName: "vale", order:
     [{productName: "Café",
     qty: 3,
     subtotal: 3000},{
@@ -16,18 +16,30 @@ class Order extends Component{
         qty: 2,
         subtotal: 2000   
     }]};
-
+ */
+    
     }
     render(){
         return(
             <div className="order">
-                <p>Pedido de {this.state.clientName}</p>
-                {this.state.order.map((e)=>{
-                    return e.productName + e.qty + e.subtotal
+                <p>Pedido de {JSON.stringify(this.props.Order.actualOrder)}</p>
+             {/*  {this.props.listOrder.map((e)=>{
+                    return e.productName
 
-                })}
+                })}  */}
             </div>
         )
     }
 }
-export default Order;
+
+const mapStateToProps = (state)=>{
+    return {
+      ...state
+    };
+  };
+  
+ 
+  export default connect(
+    mapStateToProps
+    
+  )(FrameMenu);
