@@ -1,19 +1,34 @@
-import { ADD_ORDER } from "../actions/actionTypes";
+//acá va la función que le da un nuevo estado a los componentes
+import { ADD_TO_ORDER, REMOVE_OF_ORDER, ADD_NAME } from "../actions/actionTypes";
 
 export default (
 state={  //pasado
-    name: "",
-    items: []
+    actualOrder: {clientName: "", listOrder: []},
+    kitchenlist: [],
+    historial: []
+
 },
 action //presente
 ) => {
     switch(action.type){
-        case ADD_ORDER:
+        case ADD_TO_ORDER:
             return{ //futuro
                 ...state,
-                items: state.items.concat([action.payload])
-
+                actualOrder:{
+                    listOrder: state.actualOrder.listOrder.concat([action.payload])
+                }
             }
+            case REMOVE_OF_ORDER:
+                return{
+                    ...state,
+                    actualOrder: state.actualOrder.listOrder.filter((e)=>{return([action.payload]!==e)})
+            }
+            case ADD_NAME:
+                const copy=Object.assign({},state)
+                copy.actualOrder.clientName=[action.payload]
+            return copy;
+                
+            default: return state;
 
 
     }
