@@ -11,13 +11,14 @@ class ElementMenu extends Component{
 
     }
     render(){
+
         return(
             <div className="elementmenu">
                 <ul>
                     <li>{this.props.name}</li>
                     <li>{this.props.price}</li>
                 </ul>
-                <button onClick={()=>{this.props.ADD(this.props)}}type="button" className="addone">+1</button>
+                <button onClick={()=>{this.props.ADD({name: this.props.name, price: this.props.price})}} type="button" className="addone">+1</button>
                 <button onClick={()=>{this.props.DELETE(this.props)}}type="button" className="lessone">-1</button>
                 
             </div>
@@ -28,11 +29,11 @@ class ElementMenu extends Component{
         )
     }
 }
-const mapStateToProps = (state)=>{
+ const mapStateToProps = (state)=>{
     return {
       ...state
     };
-  };
+  }; 
 
   const mapDispatchToProps = (dispatch) => {
     return {
@@ -42,6 +43,6 @@ const mapStateToProps = (state)=>{
     }
   }
   export default connect(
-    mapStateToProps,
+     mapStateToProps, 
     mapDispatchToProps
   )(ElementMenu);
