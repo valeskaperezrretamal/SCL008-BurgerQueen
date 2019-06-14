@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
-//import './style/StyleOrder.css';
+import './style/StyleOrder.css';
 //import {lo que use de boostrap} from 'react-bootstrap';
 
 class FrameMenu extends Component{
@@ -17,16 +17,16 @@ class FrameMenu extends Component{
         subtotal: 2000   
     }]};
  */
-    
+
     }
     render(){
         return(
-            <div className="order">
-                <p>Pedido de {JSON.stringify(this.props.Order.actualOrder)}</p>
-             {/*  {this.props.listOrder.map((e)=>{
-                    return e.productName
+            <div className="order"> 
+                <p>Pedido de {this.props.clientName}</p>
+              {this.props.listOrder.map((e)=>{
+                    return <p>{e.name}{" $"}{e.price}</p>
 
-                })}  */}
+                })}  
             </div>
         )
     }
@@ -34,7 +34,7 @@ class FrameMenu extends Component{
 
 const mapStateToProps = (state)=>{
     return {
-      ...state
+      ...state.Order.actualOrder
     };
   };
   
