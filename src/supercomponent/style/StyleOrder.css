@@ -1,2 +1,8 @@
-.order{text-align: center; background: white; width: 244px; height: 244px;float:left;}  
+.order{text-align: center; background: white; width: 244px; height: 244px;margin-left: 60%;
+     margin-top: 1%; z-index: 100; position: fixed;position: relative;margin-top: 1%; margin-bottom: 80%;}  
+
+.elementmenu button{
+    margin-top: 0%;
+    margin-bottom: 90%;
+}
 

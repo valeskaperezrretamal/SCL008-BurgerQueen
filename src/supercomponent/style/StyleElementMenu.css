@@ -3,6 +3,7 @@ width: 308px;
 height: 77px;
 left: 130px;
 top: 165px;
+z-index: 99;
 
 background: #F6F168;
 }
