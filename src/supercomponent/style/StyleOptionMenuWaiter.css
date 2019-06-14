@@ -1,3 +1,14 @@
 .optionmenuwaiter button{
     background:  #F25F94;
+    margin-top: 0%;
+    top: 8%;
+    z-index: 99;
+
 }
+
+.addone{
+    margin-top: 5%;
+    }
+    .lessone{
+    margin-top: 5%;
+    }

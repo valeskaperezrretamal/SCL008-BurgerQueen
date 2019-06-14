@@ -27,7 +27,7 @@ color: #000000;
 
 }
 .letrasnavigationMenu {
-    position: relative;
+    /* position: relative; */
     clear: both;
     height: 50px;
     padding: 2px 0 4px;
@@ -45,7 +45,7 @@ color: #000000;
 
 .btnOption{
 margin:3%;
-top:463px;
+top:725px;
 left:-339px;
 width: 150px;
 height: 59px;
@@ -71,5 +71,6 @@ background: #F6F168;
 
 } 
 .clientName{
-margin: 20%;
+    margin-top: 20%;
+    z-index: 99;
 }
