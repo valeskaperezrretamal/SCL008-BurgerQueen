@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.8.6",
@@ -18,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test jest --coverage",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -40,5 +41,5 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.2"
   },
-  "homepage":"https://valeskaperezrretamal.github.io/SCL008-BurgerQueen/"
+  "homepage": "https://valeskaperezrretamal.github.io/SCL008-BurgerQueen/"
 }
